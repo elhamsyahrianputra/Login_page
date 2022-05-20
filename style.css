@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body,html {
+    height: 100%;
+}
+
+.login-background {
+    background-image: url(assets/img/background.svg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px 1px;
+    
+    
+}
+
+.content .form-login {
+    width: 40%;
+    padding: 20px 55px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+.content .form-login p{
+    margin-bottom: 25px;
+}
+
+.content .form-login input[type=text],input[type=password], input[type=date] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.content .form-login input[type=checkbox] {
+    display: inline-block;
+    margin-bottom: 12px;
+
+}
+
+.content .form-login a{
+    text-decoration: none;
+    color: darkviolet;
+    font-weight: 700;
+}
+
+.content .form-login a[id=forgot-password]{
+    float: right;
+}
+.content .form-login a:hover {
+    opacity: 0.7;
+}
+
+.content .form-login .or-line {
+    text-align: center;
+    margin-bottom: 12px;
+    color: gray;
+}
+
+.content .form-login button {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.content .form-login .btn {
+    background-color: darkviolet;
+    color: white;
+}
+
+.content .form-login .btn:hover {
+    opacity: 0.8;
+}
+
+.content .form-login button img {
+    height: 15px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+}
+
+.content .form-login .btn-another-login {
+    background-color: white;
+    color: black;
+    border: 1px solid darkviolet;
+}
+
+.content .form-login .btn-another-login:hover {
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.content .form-login .error-notif {
+    color: firebrick;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content .content-image {
+    width: 60%;
+    background-image: url(assets/img/space-image.svg);
+}
+
+.welcome {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.welcome p {
+    font-size: 30px;
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.home-background {
+    background-image: url(assets/img/background1.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+}
